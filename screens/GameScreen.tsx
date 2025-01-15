@@ -5,6 +5,7 @@ import { NumberContainer } from "../components/game/NumberContainer";
 import { PrimaryButton } from "../components/ui/PrimaryButton";
 import Card from "../components/ui/Cart";
 import InstructionsText from "../components/ui/InstructionsText";
+import { Ionicons } from "@expo/vector-icons";
 
 const generateRandomNumber = (
   min: number,
@@ -77,12 +78,12 @@ const GameScreen = ({ userNumber, onGameOver }: GameScreenProps) => {
         <View style={styles.buttonsContainer}>
           <View style={styles.buttonContainer}>
             <PrimaryButton onPress={() => nextGuessHandler("higher")}>
-              +
+              <Ionicons name="remove-sharp" size={24} color="white" />
             </PrimaryButton>
           </View>
           <View style={styles.buttonContainer}>
             <PrimaryButton onPress={() => nextGuessHandler("lower")}>
-              -
+              <Ionicons name="add-sharp" size={24} color="white" />
             </PrimaryButton>
           </View>
         </View>

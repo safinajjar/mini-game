@@ -1,8 +1,9 @@
 import { Pressable, StyleSheet, Text, View } from "react-native";
 import { Colors } from "../../constants/colors";
+import { ReactNode } from "react";
 
 type PrimaryButtonProps = {
-  children: string;
+  children: ReactNode | string;
   onPress?: () => void;
 };
 
