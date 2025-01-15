@@ -1,5 +1,5 @@
 import { StyleSheet, Text } from "react-native";
-import { Colors } from "../constants/colors";
+import { Colors } from "../../constants/colors";
 
 type PrimaryTitleProps = {
   children: string;
@@ -12,11 +12,11 @@ export const PrimaryTitle = ({ children }: PrimaryTitleProps) => {
 const styles = StyleSheet.create({
   title: {
     borderWidth: 2,
-    borderColor: Colors.accent500,
+    borderColor: Colors.white,
     padding: 12,
     fontSize: 24,
     fontWeight: "bold",
-    color: Colors.accent500,
+    color: Colors.white,
     textAlign: "center",
   },
 });
